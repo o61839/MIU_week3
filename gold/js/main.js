@@ -8,21 +8,22 @@ $('#home').on('pageinit', function(){
 	//code needed for home page goes here
 });	
 	
-$('#addItem').on('pageinit', function(){
+$('#formId').on('pageinit', function(){
 
-		var addBook = $('#formId');
-			addBook.validate({
-			invalidHandler: function(form, validator) {
-				
-			},
-			submitHandler: function() {
-				var data = addBook.serializeArray();
-				storeData(data);
-			}
+    var myForm = $('#gatherbooks');
+    myForm.validate({
+    invalidHandler: function(form, validator) {
+    },
+    submitHandler: function() {
+    var data = myForm.serializeArray();
+    storeData(data);
+    }
+    });
+
+//any other code needed for addItem page goes here
+
 });
-
-	//any other code needed for addItem page goes here
-
+	
 });
 
 //The functions below can go inside or outside the pageinit function for the page in which it is needed.
