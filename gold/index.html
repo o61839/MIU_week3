@@ -596,7 +596,8 @@
 				</small>
 			</div>
    			<div data-role="content">
-   				<form action="" method="post" id="gatherbooks">
+   			<!--action="" method="post"-->
+   				<form id="gatherbooks">
    					<div data-role="fieldcontain">
 						<label for="bookTitle">***Title:</label>
 						<input type="text" name="bookTitle" id="bookTitle" class="required" placeholder="e.g. Designing Interfaces"></input>
@@ -707,6 +708,9 @@
 						<input type="submit" value="Add book" data-theme="e" data-inline="true"/>
 						<input type="reset" value="Reset" data-theme="d" data-inline="true"/>
    					</div>
+   					
+   					<a href="ERRORS" id=errorsLink data-rel="dialog">Open Errors</a>
+   					
    				</form>
    			</div> 
    			 <div data-role="footer" data-position="fixed">
